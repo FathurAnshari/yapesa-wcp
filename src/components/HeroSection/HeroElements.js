@@ -95,7 +95,7 @@ export const HeroBtnWrapper = styled.div`
 `;
 
 export const ArrowForward = styled(MdArrowForward)`
-  margin-top: 8px;
+  margin-left: 8px;
   font-size: 20px;
 `;
 
