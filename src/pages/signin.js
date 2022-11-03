@@ -1,7 +1,12 @@
 import React from "react";
+import SignIn from "../components/Signin";
 
 const SigninPage = () => {
-  return <div>Sign in Page</div>;
+  return (
+    <div>
+      <SignIn />
+    </div>
+  );
 };
 
 export default SigninPage;
