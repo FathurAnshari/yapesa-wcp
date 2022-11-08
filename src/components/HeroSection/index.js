@@ -31,7 +31,7 @@ const HeroSection = () => {
         <HeroP>Lembaga sosial moderen</HeroP>
         <HeroBtnWrapper>
           <ButtonHero
-            to="about"
+            to="profile-singkat"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"

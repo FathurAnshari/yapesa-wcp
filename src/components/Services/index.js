@@ -1,7 +1,7 @@
 import React from "react";
-import Icon1 from "../../images/svg-4.svg";
-import Icon2 from "../../images/svg-5.svg";
-import Icon3 from "../../images/svg-6.svg";
+import Icon1 from "../../images/kajiantausiah.jpeg";
+import Icon2 from "../../images/jumatberkah.jpeg";
+import Icon3 from "../../images/tahsintahfidz.jpeg";
 import Icon4 from "../../images/tahfidz.png";
 import {
   ServicesContainer,
@@ -19,7 +19,7 @@ const Services = () => {
       <ServicesH1>Kegiatan</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
-          <ServicesIcon src={Icon1} />
+          <ServicesIcon src={Icon3} />
           <ServicesH2>Kajian Tausiah</ServicesH2>
           <ServicesP>Kegiatan kajian membahas topik hangat.</ServicesP>
         </ServicesCard>
@@ -31,7 +31,7 @@ const Services = () => {
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon3} />
+          <ServicesIcon src={Icon1} />
           <ServicesH2>Tahsin & Tahfidz</ServicesH2>
           <ServicesP>Memperindah bacaan Al-Qur'an & setoran hafalan.</ServicesP>
         </ServicesCard>

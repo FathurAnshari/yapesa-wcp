@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ServicesContainer = styled.div`
-  height: 800px;
+  height: 860px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,6 +57,7 @@ export const ServicesCard = styled.div`
 export const ServicesIcon = styled.img`
   height: 160px;
   width: 160px;
+  object-fit: cover;
   margin-bottom: 10px;
 `;
 
