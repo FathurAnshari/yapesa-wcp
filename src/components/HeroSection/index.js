@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "../ButtonElements";
+import { ButtonHero } from "../ButtonHero";
 import Video from "../../videos/video.mp4";
 import {
   HeroContainer,
@@ -30,8 +30,8 @@ const HeroSection = () => {
         </HeroH1>
         <HeroP>Lembaga sosial moderen</HeroP>
         <HeroBtnWrapper>
-          <Button
-            to="signup"
+          <ButtonHero
+            to="about"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
@@ -43,7 +43,7 @@ const HeroSection = () => {
             offset={-80}
           >
             Get started {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+          </ButtonHero>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>

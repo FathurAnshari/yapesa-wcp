@@ -11,6 +11,7 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
+  NavLinksR,
 } from "./NavbarElemets";
 
 const Navbar = ({ toggle }) => {
@@ -44,8 +45,9 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks
-                to="about"
+              <NavLinksR
+                to="/"
+                onClick={toggleHome}
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -53,11 +55,11 @@ const Navbar = ({ toggle }) => {
                 offset={-80}
               >
                 Home
-              </NavLinks>
+              </NavLinksR>
             </NavItem>
             <NavItem>
-              <NavLinks
-                to="discover"
+              <NavLinksR
+                to="profile"
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -65,11 +67,11 @@ const Navbar = ({ toggle }) => {
                 offset={-80}
               >
                 Profile
-              </NavLinks>
+              </NavLinksR>
             </NavItem>
             <NavItem>
-              <NavLinks
-                to="services"
+              <NavLinksR
+                to="kegiatan"
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -77,11 +79,11 @@ const Navbar = ({ toggle }) => {
                 offset={-80}
               >
                 Kegiatan
-              </NavLinks>
+              </NavLinksR>
             </NavItem>
             <NavItem>
-              <NavLinks
-                to="signup"
+              <NavLinksR
+                to="gallery"
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -89,10 +91,10 @@ const Navbar = ({ toggle }) => {
                 offset={-80}
               >
                 Gallery
-              </NavLinks>
+              </NavLinksR>
             </NavItem>
             <NavItem>
-              <NavLinks
+              <NavLinksR
                 to="contact"
                 smooth={true}
                 duration={500}
@@ -101,7 +103,7 @@ const Navbar = ({ toggle }) => {
                 offset={-80}
               >
                 Contact
-              </NavLinks>
+              </NavLinksR>
             </NavItem>
           </NavMenu>
           {/* <NavBtn>

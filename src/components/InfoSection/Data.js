@@ -1,5 +1,5 @@
 export const homeObjOne = {
-  id: "about",
+  id: "profile-singkat",
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
@@ -14,10 +14,11 @@ export const homeObjOne = {
   dark: true,
   primary: true,
   darkText: false,
+  to: "/profile",
 };
 
 export const homeObjTwo = {
-  id: "discover",
+  id: "sejarah",
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
@@ -32,10 +33,11 @@ export const homeObjTwo = {
   dark: false,
   primary: false,
   darkText: true,
+  to: "/profile",
 };
 
 export const homeObjThree = {
-  id: "signup",
+  id: "gallery",
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
@@ -50,4 +52,5 @@ export const homeObjThree = {
   dark: false,
   primary: false,
   darkText: true,
+  to: "/gallery",
 };
