@@ -52,7 +52,7 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                About
+                Home
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -64,7 +64,7 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Discover
+                Profile
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -76,7 +76,7 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Services
+                Kegiatan
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -88,11 +88,11 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Sign Up
+                Gallery
               </NavLinks>
             </NavItem>
           </NavMenu>
-          <NavBtn>
+          {/* <NavBtn>
             <NavBtnLink
               to="/signin"
               smooth={true}
@@ -103,7 +103,7 @@ const Navbar = ({ toggle }) => {
             >
               Sign In
             </NavBtnLink>
-          </NavBtn>
+          </NavBtn> */}
         </NavbarContainer>
       </Nav>
     </>
