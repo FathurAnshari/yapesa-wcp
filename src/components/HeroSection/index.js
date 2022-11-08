@@ -25,7 +25,9 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Yayasan Pendidikan Endang Saefuddin Anshari</HeroH1>
+        <HeroH1>
+          Yayasan Pendidikan <br /> Endang Saefuddin Anshari
+        </HeroH1>
         <HeroP>Lembaga sosial moderen</HeroP>
         <HeroBtnWrapper>
           <Button
