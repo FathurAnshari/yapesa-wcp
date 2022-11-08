@@ -15,28 +15,24 @@ import {
 const Services = () => {
   return (
     <ServicesContainer id="services">
-      <ServicesH1>Our Services</ServicesH1>
+      <ServicesH1>Kegiatan</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={Icon1} />
-          <ServicesH2>Reduce expenses</ServicesH2>
-          <ServicesP>
-            We help reduce your fess and increase your overall revenue
-          </ServicesP>
+          <ServicesH2>Kajian Tausiah</ServicesH2>
+          <ServicesP>Kegiatan kajian membahas topik hangat.</ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon2} />
-          <ServicesH2>Virtual Offices</ServicesH2>
+          <ServicesH2>Jum'at Berkah</ServicesH2>
           <ServicesP>
-            You can access our platform online anywhere in the world.
+            Berbagi kebahagiaan kepada orang yang kurang mampu.
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon3} />
-          <ServicesH2>Premium Benefits</ServicesH2>
-          <ServicesP>
-            Unlock our special membership card return 5% cash back.
-          </ServicesP>
+          <ServicesH2>Tahsin & Tahfidz</ServicesH2>
+          <ServicesP>Memperindah bacaan Al-Qur'an & setoran hafalan.</ServicesP>
         </ServicesCard>
       </ServicesWrapper>
     </ServicesContainer>
