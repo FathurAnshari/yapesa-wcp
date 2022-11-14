@@ -59,6 +59,7 @@ export const ServicesIcon = styled.img`
   width: 160px;
   object-fit: cover;
   margin-bottom: 10px;
+  border-radius: 15px;
 `;
 
 export const ServicesH1 = styled.h1`

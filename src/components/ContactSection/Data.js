@@ -1,12 +1,11 @@
 export const contactObj = {
-  id: "profile-singkat",
+  id: "Contact Us",
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: "Profil Singkat",
+  topLine: "Contact Us",
   headLine: "Yayasan Endang Saefuddin Anshari",
-  description:
-    "Adalah sebuah lembaga sosial yang terletak di Jl. Platina No 15, Komplek Logam, Buahbatu Bandung yang saat ini sedang dalam proses menjadi madrasah yang maju dan moderen.",
+  description: "Saran dan kritik sangat diapresiasi untuk kemajuan YAPESA",
   buttonLabel: "Go to profile",
   imgStart: false,
   img: require("../../images/YAPESA.jpg"),

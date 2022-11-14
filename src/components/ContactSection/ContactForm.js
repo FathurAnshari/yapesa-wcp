@@ -12,15 +12,16 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "replace with service id",
-        "replace with template id",
+        "service_5bx8gz8",
+        "template_wsre8vs",
         form.current,
-        "replace with user id"
+        "eLkI8YbuOGUS3oCu7"
       )
       .then(
         (result) => {
           console.log(result.text);
           console.log("message sent");
+          e.target.reset();
         },
         (error) => {
           console.log(error.text);
