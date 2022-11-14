@@ -4,6 +4,7 @@ import { contactObj } from "../components/ContactSection/Data";
 
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import ScrollToTop from "../components/ScrollToTop";
 import Sidebar from "../components/Sidebar";
 
 const Contact = () => {
@@ -14,6 +15,7 @@ const Contact = () => {
   };
   return (
     <>
+      <ScrollToTop />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <ContactSection {...contactObj} />
