@@ -9,13 +9,7 @@ const Gallery = () => {
   const toggle = () => {
     setIsopen(!isOpen);
   };
-  return (
-    <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
-      <Footer />
-    </>
-  );
+  return <></>;
 };
 
 export default Gallery;
