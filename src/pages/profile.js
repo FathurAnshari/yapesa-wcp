@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
 
 const Profile = () => {
-  return <div>ini profile section</div>;
+  const [isOpen, setIsopen] = useState(false);
+
+  const toggle = () => {
+    setIsopen(!isOpen);
+  };
+  return (
+    <>
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
+      <Footer />
+    </>
+  );
 };
 
 export default Profile;
