@@ -7,10 +7,44 @@ import LoadingSpinner from "../UI/LoadingSpinner";
 
 const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
+  const [enteredName, setEnteredName] = useState("");
+  const [enteredEmail, setEnteredEmail] = useState("");
+  const [enteredMessage, setEnteredMessage] = useState("");
+  const [enteredNameIsValid, setEnteredNameIsValid] = useState(true);
+  const [enteredEmailIsValid, setEnteredEmailIsValid] = useState(true);
+  const [enteredMessageIsValid, setEnteredMessageIsValid] = useState(true);
+
   const form = useRef();
+
+  const nameInputChangeHandler = (event) => {
+    setEnteredName(event.target.value);
+  };
+
+  const emailInputChangeHandler = (event) => {
+    setEnteredEmail(event.target.value);
+  };
+
+  const messageInputChangeHandler = (event) => {
+    setEnteredMessage(event.target.value);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    if (enteredName.trim() === "") {
+      setEnteredNameIsValid(false);
+
+      return;
+    }
+    if (enteredEmail.trim() === "") {
+      setEnteredEmailIsValid(false);
+      return;
+    }
+    if (enteredMessage.trim() === "") {
+      setEnteredMessageIsValid(false);
+      return;
+    }
+
     setIsLoading(true);
 
     emailjs
@@ -33,15 +67,42 @@ const Contact = () => {
         }
       );
   };
+
   return (
     <StyledContactForm>
       <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
-        <input type="text" name="user_name" />
+        <input
+          type="text"
+          name="user_name"
+          value={enteredName}
+          onChange={nameInputChangeHandler}
+        />
+        {!enteredNameIsValid && (
+          <p className="error-text">Name must not be empty</p>
+        )}
+
         <label>Email</label>
-        <input type="email" name="user_email" />
+        <input
+          type="email"
+          name="user_email"
+          value={enteredEmail}
+          onChange={emailInputChangeHandler}
+        />
+        {!enteredEmailIsValid && (
+          <p className="error-text">Email must not be empty</p>
+        )}
+
         <label>Message</label>
-        <textarea name="message" />
+        <textarea
+          name="message"
+          value={enteredMessage}
+          onChange={messageInputChangeHandler}
+        />
+        {!enteredMessageIsValid && (
+          <p className="error-text">Message must not be empty</p>
+        )}
+
         {isLoading ? <LoadingSpinner /> : <input type="submit" value="Send" />}
       </form>
     </StyledContactForm>
