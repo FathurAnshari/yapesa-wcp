@@ -42,7 +42,6 @@ export const Column1 = styled.div`
 
 export const Column2 = styled.div`
   margin-bottom: 15px;
-  margin-left: auto;
   padding: 0 15px;
   grid-area: col2;
 `;
@@ -51,6 +50,10 @@ export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 0;
+  }
 `;
 
 export const TopLine = styled.p`

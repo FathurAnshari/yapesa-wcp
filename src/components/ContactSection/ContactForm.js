@@ -48,13 +48,15 @@ export default Contact;
 
 // Styles
 const StyledContactForm = styled.div`
-  width: 400px;
+  width: 100%;
+
   form {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     width: 100%;
     font-size: 16px;
+
     input {
       width: 100%;
       height: 35px;
