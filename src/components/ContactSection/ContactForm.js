@@ -1,14 +1,17 @@
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
+import LoadingSpinner from "../UI/LoadingSpinner";
 
 // npm i @emailjs/browser
 
 const Contact = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsLoading(true);
 
     emailjs
       .sendForm(
@@ -21,14 +24,15 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           console.log("message sent");
+          setIsLoading(false);
           e.target.reset();
         },
         (error) => {
+          setIsLoading(false);
           console.log(error.text);
         }
       );
   };
-
   return (
     <StyledContactForm>
       <form ref={form} onSubmit={sendEmail}>
@@ -38,7 +42,7 @@ const Contact = () => {
         <input type="email" name="user_email" />
         <label>Message</label>
         <textarea name="message" />
-        <input type="submit" value="Send" />
+        {isLoading ? <LoadingSpinner /> : <input type="submit" value="Send" />}
       </form>
     </StyledContactForm>
   );

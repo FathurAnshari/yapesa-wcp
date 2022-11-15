@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../ButtonElements";
+import BasicForm from "../Form/BasicForm";
 import {
   InfoContainer,
   InfoWrapper,
@@ -60,9 +61,7 @@ const ContactSection = ({
                 </BtnWrap>
               </TextWrapper>
             </Column1>
-            <Column2>
-              <ContactForm />
-            </Column2>
+            <Column2>{<ContactForm />}</Column2>
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>
