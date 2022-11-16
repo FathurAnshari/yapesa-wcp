@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ButtonHero } from "../ButtonHero";
+
 import Video from "../../videos/video.mp4";
 import {
   HeroContainer,
@@ -12,6 +13,8 @@ import {
   ArrowForward,
   ArrowRight,
 } from "./HeroElements";
+import ImageSlider from "../SliderSection/ImageSlider";
+import { SliderData } from "../SliderSection/SliderData";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -21,9 +24,10 @@ const HeroSection = () => {
   };
   return (
     <HeroContainer id="home">
-      <HeroBg>
+      {/* <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
-      </HeroBg>
+      </HeroBg> */}
+      <ImageSlider slides={SliderData} />
       <HeroContent>
         <HeroH1>
           Yayasan Pendidikan <br /> Endang Saefuddin Anshari
