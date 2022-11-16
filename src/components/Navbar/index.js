@@ -51,8 +51,7 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                exact="true"
-                offset={-80}
+                // offset={-80}
               >
                 Home
               </NavLinksR>
@@ -64,7 +63,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-80}
+                // offset={-80}
               >
                 Profile
               </NavLinksR>
@@ -76,7 +75,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-80}
+                // offset={-80}
               >
                 Kegiatan
               </NavLinksR>
@@ -88,7 +87,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-80}
+                // offset={-80}
               >
                 Gallery
               </NavLinksR>
@@ -100,7 +99,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-80}
+                // offset={-80}
               >
                 Contact
               </NavLinksR>

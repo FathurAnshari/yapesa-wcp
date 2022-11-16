@@ -24,10 +24,18 @@
   top: 50%;
   right: 32px;
   font-size: 3rem;
-  color: #000;
+  color: #fff;
   z-index: 10;
   cursor: pointer;
   user-select: none;
+}
+
+.right-arrow:hover {
+  color: #01bf71;
+}
+
+.left-arrow:hover {
+  color: #01bf71;
 }
 
 .left-arrow {
@@ -35,7 +43,7 @@
   top: 50%;
   left: 32px;
   font-size: 3rem;
-  color: #000;
+  color: #fff;
   z-index: 10;
   cursor: pointer;
   user-select: none;
@@ -49,4 +57,8 @@
 .slide.active {
   opacity: 1;
   transition-duration: 1s;
+}
+
+a.active {
+  border-bottom: 3px solid #01bf71;
 }

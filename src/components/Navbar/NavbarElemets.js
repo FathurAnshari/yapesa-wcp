@@ -81,9 +81,9 @@ export const NavLinks = styled(LinkS)`
   height: 100%;
   cursor: pointer;
 
-  &.active {
+  /* &.active {
     border-bottom: 3px solid #01bf71;
-  }
+  } */
 `;
 export const NavLinksR = styled(LinkR)`
   color: #fff;
@@ -94,8 +94,11 @@ export const NavLinksR = styled(LinkR)`
   height: 100%;
   cursor: pointer;
 
-  &.active {
+  /* &.active {
     border-bottom: 3px solid #01bf71;
+  } */
+  &:hover {
+    color: #01bf71;
   }
 `;
 
