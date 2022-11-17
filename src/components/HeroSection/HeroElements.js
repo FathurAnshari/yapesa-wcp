@@ -49,6 +49,7 @@ export const HeroContainer = styled.div`
 
 export const HeroContent = styled.div`
   z-index: 3;
+  margin-top: -80px;
   max-width: 1200px;
   position: absolute;
   padding: 8px 24px;

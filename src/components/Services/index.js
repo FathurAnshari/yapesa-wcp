@@ -20,7 +20,7 @@ const Services = () => {
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={Icon3} />
-          <ServicesH2>Kajian Tausiah</ServicesH2>
+          <ServicesH2>Kajian Islami</ServicesH2>
           <ServicesP>Kegiatan kajian membahas topik hangat.</ServicesP>
         </ServicesCard>
         <ServicesCard>

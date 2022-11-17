@@ -25,9 +25,9 @@ const ImageSlider = ({ slides }) => {
     return null;
   }
   return (
-    <section>
-      <FaAngleLeft className="left-arrow" onClick={prevSlide} />
-      <FaAngleRight className="right-arrow" onClick={nextSlide} />
+    <section className="margin-top">
+      <FaAngleLeft className="left-arrow margin-top" onClick={prevSlide} />
+      <FaAngleRight className="right-arrow margin-top" onClick={nextSlide} />
       {SliderData.map((slide, index) => {
         return (
           <div
