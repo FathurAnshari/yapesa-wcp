@@ -59,6 +59,6 @@
   transition-duration: 1s;
 }
 
-a.active {
+.activeBorder {
   border-bottom: 3px solid #01bf71;
 }

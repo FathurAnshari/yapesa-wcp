@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
+import { NavLink } from "react-router-dom";
 
 export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? "#000" : "#000")};
@@ -85,7 +86,7 @@ export const NavLinks = styled(LinkS)`
     border-bottom: 3px solid #01bf71;
   } */
 `;
-export const NavLinksR = styled(LinkR)`
+export const NavLinksR = styled(NavLink)`
   color: #fff;
   display: flex;
   align-items: center;
@@ -94,9 +95,9 @@ export const NavLinksR = styled(LinkR)`
   height: 100%;
   cursor: pointer;
 
-  /* &.active {
+  &.active {
     border-bottom: 3px solid #01bf71;
-  } */
+  }
   &:hover {
     color: #01bf71;
   }

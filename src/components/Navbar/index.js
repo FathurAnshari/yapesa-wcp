@@ -47,10 +47,13 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinksR
                 to="/"
+                end
                 onClick={toggleHome}
                 smooth={true}
                 duration={500}
                 spy={true}
+                exact="true"
+
                 // offset={-80}
               >
                 Home
@@ -63,6 +66,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
+
                 // offset={-80}
               >
                 Profile
