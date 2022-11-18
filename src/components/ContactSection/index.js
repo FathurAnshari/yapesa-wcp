@@ -61,7 +61,9 @@ const ContactSection = ({
                 </BtnWrap>
               </TextWrapper>
             </Column1>
-            <Column2>{<ContactForm />}</Column2>
+            <Column2>
+              <ContactForm />
+            </Column2>
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>
