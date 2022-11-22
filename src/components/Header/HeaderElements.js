@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeaderTop = styled.div`
   background: #01bf71;
-  height: 50px;
+  height: 45px;
   margin-top: 0px;
   display: flex;
   justify-content: center;

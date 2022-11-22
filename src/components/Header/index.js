@@ -1,5 +1,11 @@
 import React from "react";
-import { FaMailBulk, FaSearchLocation, FaPhone } from "react-icons/fa";
+import {
+  FaMailBulk,
+  FaSearchLocation,
+  FaPhone,
+  FaEnvelope,
+  FaMapMarker,
+} from "react-icons/fa";
 import {
   HeaderTop,
   Container,
@@ -20,11 +26,11 @@ const Header = () => {
             <Text>7750820047 An. Ira Sara Noviati</Text>
           </HeaderItems>
           <HeaderItems>
-            <FaSearchLocation />
+            <FaMapMarker />
             <Text>Jl. Platina NO. 15 Logam, Buahbatu Bandung</Text>
           </HeaderItems>
           <HeaderItems>
-            <FaMailBulk />
+            <FaEnvelope />
             <Text>kampungquranyapesa@gmail.com</Text>
           </HeaderItems>
           <HeaderItems>
