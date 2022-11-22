@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { SliderData } from "./SliderData";
+import { Container } from "./SliderElements";
 import {
   FaArrowAltCircleRight,
   FaArrowAltCircleLeft,
@@ -25,7 +26,7 @@ const ImageSlider = ({ slides }) => {
     return null;
   }
   return (
-    <section className="margin-top">
+    <Container>
       <FaAngleLeft className="left-arrow margin-top" onClick={prevSlide} />
       <FaAngleRight className="right-arrow margin-top" onClick={nextSlide} />
       {SliderData.map((slide, index) => {
@@ -40,7 +41,7 @@ const ImageSlider = ({ slides }) => {
           </div>
         );
       })}
-    </section>
+    </Container>
   );
 };
 

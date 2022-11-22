@@ -10,6 +10,7 @@ import Kegiatan from "./pages/kegiatan";
 import Gallery from "./pages/galery";
 import Contact from "./pages/contact";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +21,7 @@ function App() {
   return (
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Header />
       <Navbar toggle={toggle} />
       <Routes>
         <Route path="/" element={<Home />} exact />
