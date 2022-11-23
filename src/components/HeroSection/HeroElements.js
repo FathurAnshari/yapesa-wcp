@@ -69,6 +69,7 @@ export const HeroH1 = styled.h1`
   }
 
   @media screen and (max-width: 480px) {
+    margin-bottom: 350px;
     font-size: 32px;
   }
 `;
