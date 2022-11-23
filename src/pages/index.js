@@ -8,8 +8,10 @@ import {
   homeObjThree,
   homeObjTwo,
 } from "../components/InfoSection/Data";
+import { homeObjYT } from "../components/InfoEmbed/Data";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
+import YoutubeEmbedSection from "../components/InfoEmbed";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +26,8 @@ const Home = () => {
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
       <Services />
-      <InfoSection {...homeObjThree} />
+      <YoutubeEmbedSection {...homeObjYT} />
+      {/* <InfoSection {...homeObjThree} /> */}
     </>
   );
 };
