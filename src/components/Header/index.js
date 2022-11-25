@@ -23,7 +23,7 @@ const Header = () => {
         <HeaderMenu>
           <HeaderItems>
             <BCA src={iconBCA} />
-            <Text>7750820047 An. Ira Sara Noviati</Text>
+            <Text>7750820047 An. YAPESA</Text>
           </HeaderItems>
           <HeaderItems>
             <FaMapMarker />
