@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import GallerySection from "../components/GallerySection";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Gallery = () => {
   const [isOpen, setIsopen] = useState(false);
@@ -9,8 +10,7 @@ const Gallery = () => {
   };
   return (
     <>
-      <h1 style={{ textAlign: "center" }}>Image Gallery</h1>
-      <h1 style={{ textAlign: "center" }}>Kegiatan YAPESA</h1>
+      <ScrollToTop />
       <GallerySection />
     </>
   );

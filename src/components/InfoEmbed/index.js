@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../ButtonElements";
+import { Button, ButtonYT } from "../ButtonElements";
 import YoutubeEmbed from "../YoutubeEmbed";
 import {
   InfoContainer,
@@ -26,8 +26,8 @@ const YoutubeEmbedSection = ({
   darkText,
   description,
   buttonLabel,
-  img,
-  alt,
+  buttonLabel2,
+  url,
   primary,
   dark,
   dark2,
@@ -57,6 +57,21 @@ const YoutubeEmbedSection = ({
                   >
                     {buttonLabel}
                   </Button>
+                  <ButtonYT
+                    to={to}
+                    target="_blank"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    primary={primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
+                    href={url}
+                  >
+                    {buttonLabel2}
+                  </ButtonYT>
                 </BtnWrap>
               </TextWrapper>
             </Column1>

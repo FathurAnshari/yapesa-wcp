@@ -1,3 +1,15 @@
+.container {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
 .gallery {
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -12,7 +24,7 @@
   -webkit-transition: all 350ms ease;
   transition: all 350ms ease;
   cursor: pointer;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .gallery .pics:hover {
@@ -25,6 +37,11 @@
     -moz-column-count: 2;
     column-count: 2;
   }
+  .text {
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+  }
 }
 @media screen and (max-width: 480px) {
   .gallery {
@@ -34,6 +51,15 @@
     -webkit-column-width: 100%;
     -moz-column-width: 100%;
     column-width: 100%;
+  }
+  .container {
+    width: 95%;
+    margin: auto;
+  }
+  .text {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
   }
 }
 /* model */
@@ -64,6 +90,7 @@
 }
 
 .model img {
+  border-radius: 1rem;
   width: auto;
   max-width: 100%;
   height: auto;

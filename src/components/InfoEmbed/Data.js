@@ -8,6 +8,7 @@ export const homeObjYT = {
   description:
     "Tim YAPESA melakukan kegiatan sosial dan kajian dengan masyarakat sekitar.",
   buttonLabel: "Go to gallery",
+  buttonLabel2: "Go to Youtube",
   imgStart: false,
   img: require("../../images/gallery.svg").default,
   alt: "Car",
@@ -15,4 +16,5 @@ export const homeObjYT = {
   primary: false,
   darkText: true,
   to: "/gallery",
+  url: "https://www.youtube.com/@yapesakampungquran957",
 };
