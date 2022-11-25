@@ -6,6 +6,7 @@ import {
   kegiatanObjOne,
   kegiatanObjThree,
   kegiatanObjTwo,
+  kegiatanObjFive,
 } from "../components/KegiatanSection/Data";
 import Navbar from "../components/Navbar";
 import ScrollToTop from "../components/ScrollToTop";
@@ -24,6 +25,7 @@ const Kegiatan = () => {
       <KegiatanSection {...kegiatanObjTwo} />
       <KegiatanSection {...kegiatanObjThree} />
       <KegiatanSection {...kegiatanObjFour} />
+      <KegiatanSection {...kegiatanObjFive} />
     </>
   );
 };

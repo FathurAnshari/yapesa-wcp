@@ -6,7 +6,7 @@ export const kegiatanObjOne = {
   topLine: "kajian Islami",
   headLine: "Kajian Islami YAPESA",
   description:
-    "Adalah sebuah lembaga sosial yang terletak di Jl. Platina No 15, Komplek Logam, Buahbatu Bandung yang saat ini sedang dalam proses menjadi madrasah yang maju dan moderen.",
+    "Kajian Islam yang meliputi ibadah Mahdhah dan Ghairu Mahdhah berdasarkan Qur'an dan hadist.",
   buttonLabel: "Go to profile",
   imgStart: false,
   img: require("../../images/kajiantausiah.jpeg"),
@@ -14,6 +14,9 @@ export const kegiatanObjOne = {
   dark: true,
   primary: true,
   darkText: false,
+  jadwalText: true,
+  jadwal: "Setiap pekan ke 4",
+  bright: true,
   to: "/profile",
 };
 export const kegiatanObjTwo = {
@@ -32,24 +35,30 @@ export const kegiatanObjTwo = {
   dark: false,
   primary: false,
   darkText: true,
+  jadwalText: false,
+  jadwal: "Setiap Jum'at subuh atau siang",
+  bright: false,
   to: "/profile",
 };
 export const kegiatanObjThree = {
-  id: "tashin-tahfidz",
+  id: "tashin",
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
   topLine: "Tahsin & Tahfidz",
-  headLine: "Tahsin dan Tahfidz YAPESA",
+  headLine: "Kajian Tahsin YAPESA",
   description:
-    "Adalah sebuah lembaga sosial yang terletak di Jl. Platina No 15, Komplek Logam, Buahbatu Bandung yang saat ini sedang dalam proses menjadi madrasah yang maju dan moderen.",
+    "Mempelajari dan membaguskan baca'an Al-Qur'an yang benar dan tepat sesuai dengan hukum Tajwid.",
   buttonLabel: "Go to profile",
   imgStart: false,
-  img: require("../../images/tahsintahfidz.jpeg"),
+  img: require("../../images/tahsinyapesa.jpeg"),
   alt: "Car",
   dark: true,
   primary: true,
   darkText: false,
+  jadwalText: true,
+  jadwal: "Setiap Ahad jam 16.00-17.30",
+  bright: true,
   to: "/profile",
 };
 export const kegiatanObjFour = {
@@ -68,5 +77,30 @@ export const kegiatanObjFour = {
   dark: false,
   primary: false,
   darkText: true,
+  jadwalText: false,
+  jadwal: "Setiap Rabu 20.00-21.00",
+  bright: false,
+  to: "/profile",
+};
+
+export const kegiatanObjFive = {
+  id: "tahfidz",
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "Tahsin & Tahfidz",
+  headLine: "Tahfidz YAPESA",
+  description:
+    "Belajar menghafal Al-Qur'an dan setoran hafalan dengan metode Talqin dan Talaqqi.",
+  buttonLabel: "Go to profile",
+  imgStart: false,
+  img: require("../../images/kajian.jpeg"),
+  alt: "Car",
+  dark: true,
+  primary: true,
+  darkText: false,
+  jadwalText: true,
+  jadwal: "Setiap Kamis & Sabtu 16.00-17.30",
+  bright: true,
   to: "/profile",
 };

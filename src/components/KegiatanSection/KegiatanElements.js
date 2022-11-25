@@ -30,6 +30,7 @@ export const InfoRow = styled.div`
     imgStart ? `"col2 col1"` : `"col1 col2"`};
 
   @media screen and (max-width: 768px) {
+    margin-bottom: 150px;
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `"col1" "col2"` : `"col1 col1"  "col2 col2"`};
   }
@@ -81,6 +82,27 @@ export const Subtitle = styled.p`
   font-size: 18px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? `#010606` : "#fff")};
+`;
+
+export const JadwalWrap = styled.div`
+  border-radius: 5px;
+  width: fit-content;
+  block-size: fit-content;
+  padding: 8px;
+  background: ${({ bright }) => (bright ? "#01BF71" : "#010606")};
+  /* white-space: nowrap; */
+`;
+
+export const Jadwal = styled.h1`
+  /* margin-bottom: 24px; */
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: ${({ jadwalText }) => (jadwalText ? "#010606" : "#f7fbfa")};
+
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 
 export const BtnWrap = styled.div`

@@ -12,6 +12,8 @@ import {
   Column1,
   Column2,
   ImgWrap,
+  Jadwal,
+  JadwalWrap,
 } from "./KegiatanElements";
 
 const KegiatanSection = ({
@@ -23,9 +25,12 @@ const KegiatanSection = ({
   headLine,
   darkText,
   description,
+  bright,
   buttonLabel,
   img,
   alt,
+  jadwal,
+  jadwalText,
   primary,
   dark,
   dark2,
@@ -41,6 +46,10 @@ const KegiatanSection = ({
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headLine}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
+                <JadwalWrap bright={bright}>
+                  <Jadwal jadwalText={jadwalText}>{jadwal}</Jadwal>
+                </JadwalWrap>
+
                 {/* <BtnWrap>
                   <Button
                     to={to}
