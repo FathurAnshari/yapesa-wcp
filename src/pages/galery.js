@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
+import GallerySection from "../components/GallerySection";
 
 const Gallery = () => {
   const [isOpen, setIsopen] = useState(false);
@@ -9,7 +7,13 @@ const Gallery = () => {
   const toggle = () => {
     setIsopen(!isOpen);
   };
-  return <></>;
+  return (
+    <>
+      <h1 style={{ textAlign: "center" }}>Image Gallery</h1>
+      <h1 style={{ textAlign: "center" }}>Kegiatan YAPESA</h1>
+      <GallerySection />
+    </>
+  );
 };
 
 export default Gallery;
