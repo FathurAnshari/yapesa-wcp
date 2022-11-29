@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+
+import Yapesa from "../../images/yapesa.png";
 import { FaBars } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
 import {
@@ -12,6 +14,8 @@ import {
   NavBtn,
   NavBtnLink,
   NavLinksR,
+  YapesaLogo,
+  Logo,
 } from "./NavbarElemets";
 
 const Navbar = ({ toggle }) => {
@@ -37,9 +41,15 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/" onClick={toggleHome}>
-            YAPESA
-          </NavLogo>
+          <Logo>
+            <NavLogo to="/" onClick={toggleHome}>
+              <YapesaLogo src={Yapesa} />
+            </NavLogo>
+            <NavLogo to="/" onClick={toggleHome}>
+              YAPESA
+            </NavLogo>
+          </Logo>
+
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
@@ -66,6 +76,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
+                onClick={toggleHome}
 
                 // offset={-80}
               >
@@ -79,6 +90,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
+                onClick={toggleHome}
                 // offset={-80}
               >
                 Kegiatan
@@ -91,6 +103,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
+                onClick={toggleHome}
                 // offset={-80}
               >
                 Gallery
@@ -103,6 +116,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
+                onClick={toggleHome}
                 // offset={-80}
               >
                 Contact

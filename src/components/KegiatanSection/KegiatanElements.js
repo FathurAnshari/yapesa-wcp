@@ -84,13 +84,31 @@ export const Subtitle = styled.p`
   color: ${({ darkText }) => (darkText ? `#010606` : "#fff")};
 `;
 
+export const Wrapper = styled.div`
+  display: flex;
+`;
+
 export const JadwalWrap = styled.div`
+  display: flex;
   border-radius: 5px;
   width: fit-content;
+  text-align: center;
+  vertical-align: center;
   block-size: fit-content;
   padding: 8px;
   background: ${({ bright }) => (bright ? "#01BF71" : "#010606")};
   /* white-space: nowrap; */
+`;
+
+export const Jam = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border-radius: 5px;
+  background: #fde428;
+  padding: 8px;
+  background: ${({ bright }) => (bright ? "#01BF71" : "#010606")};
 `;
 
 export const Jadwal = styled.h1`

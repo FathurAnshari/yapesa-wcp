@@ -30,14 +30,30 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `;
 
+export const Logo = styled.div`
+  display: flex;
+  justify-content: flex-start;
+`;
+
+export const YapesaLogo = styled.img`
+  justify-self: flex-start;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  width: 75px;
+  height: 75px;
+  text-decoration: none;
+`;
+
 export const NavLogo = styled(LinkR)`
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   display: flex;
   align-items: center;
-  margin-left: 24px;
+  margin-left: 12px;
   font-weight: bold;
   text-decoration: none;
 `;

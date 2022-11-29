@@ -1,4 +1,6 @@
 import React from "react";
+
+import { FaCalendarAlt } from "react-icons/fa";
 import {
   InfoContainer,
   InfoWrapper,
@@ -14,6 +16,8 @@ import {
   ImgWrap,
   Jadwal,
   JadwalWrap,
+  Jam,
+  Wrapper,
 } from "./KegiatanElements";
 
 const KegiatanSection = ({
@@ -46,9 +50,14 @@ const KegiatanSection = ({
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headLine}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                <JadwalWrap bright={bright}>
-                  <Jadwal jadwalText={jadwalText}>{jadwal}</Jadwal>
-                </JadwalWrap>
+                <Wrapper>
+                  <Jam bright={bright}>
+                    <FaCalendarAlt color="#fde428" />
+                  </Jam>
+                  <JadwalWrap bright={bright}>
+                    <Jadwal jadwalText={jadwalText}>{jadwal}</Jadwal>
+                  </JadwalWrap>
+                </Wrapper>
 
                 {/* <BtnWrap>
                   <Button
