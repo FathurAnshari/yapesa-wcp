@@ -7,9 +7,12 @@ import {
   TextContainer,
   TitleText,
   ProfileContent,
+  Column1,
+  Column2,
+  C1Text,
 } from "./ProfileElements";
 
-const ProfileSection = ({ titleText, lightBg }) => {
+const ProfileSection = ({ titleText, lightBg, lightText, c1text, ada }) => {
   return (
     <ProfileContainer lightBg={lightBg}>
       <ContentWrapper>
@@ -18,7 +21,12 @@ const ProfileSection = ({ titleText, lightBg }) => {
             <TitleText>{titleText}</TitleText>
           </TextContainer>
         </PageTitle>
-        <ProfileContent>ini content sejarah</ProfileContent>
+        <ProfileContent>
+          <Column1>
+            <C1Text lightText={lightText}>{c1text}</C1Text>
+          </Column1>
+          {ada ? <Column2></Column2> : ""}
+        </ProfileContent>
       </ContentWrapper>
     </ProfileContainer>
   );
