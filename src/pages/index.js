@@ -12,6 +12,7 @@ import { homeObjYT } from "../components/InfoEmbed/Data";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
 import YoutubeEmbedSection from "../components/InfoEmbed";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);

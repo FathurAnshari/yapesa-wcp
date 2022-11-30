@@ -29,35 +29,69 @@ const Footer = () => {
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/signin">How it works</FooterLink>
-              <FooterLink to="/signin">Testimonials</FooterLink>
-              <FooterLink to="/signin">Careers</FooterLink>
-              <FooterLink to="/signin">Investor</FooterLink>
-              <FooterLink to="/signin">Terms of Service</FooterLink>
+              <FooterLink to="/" onClick={toggleHome}>
+                How it works
+              </FooterLink>
+              <FooterLink to="/" onClick={toggleHome}>
+                Testimonials
+              </FooterLink>
+              <FooterLink to="/" onClick={toggleHome}>
+                Careers
+              </FooterLink>
+              <FooterLink to="/" onClick={toggleHome}>
+                Investor
+              </FooterLink>
+              <FooterLink to="/" onClick={toggleHome}>
+                Terms of Service
+              </FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle>Contact Us</FooterLinkTitle>
-              <FooterLink to="/signin">Contact</FooterLink>
-              <FooterLink to="/signin">Support</FooterLink>
-              <FooterLink to="/signin">Destinations</FooterLink>
-              <FooterLink to="/signin">Sponsorhip</FooterLink>
+              <FooterLink to="/" onClick={toggleHome}>
+                Contact
+              </FooterLink>
+              <FooterLink to="/" onClick={toggleHome}>
+                Support
+              </FooterLink>
+              <FooterLink to="/" onClick={toggleHome}>
+                Destinations
+              </FooterLink>
+              <FooterLink to="/" onClick={toggleHome}>
+                Sponsorhip
+              </FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>Videos</FooterLinkTitle>
-              <FooterLink to="/signin">Submit Video</FooterLink>
-              <FooterLink to="/signin">Ambassadors</FooterLink>
-              <FooterLink to="/signin">Agency</FooterLink>
-              <FooterLink to="/signin">Influencer</FooterLink>
+              <FooterLink to="/" onClick={toggleHome}>
+                Submit Video
+              </FooterLink>
+              <FooterLink to="/" onClick={toggleHome}>
+                Ambassadors
+              </FooterLink>
+              <FooterLink to="/" onClick={toggleHome}>
+                Agency
+              </FooterLink>
+              <FooterLink to="/" onClick={toggleHome}>
+                Influencer
+              </FooterLink>
               {/* <FooterLink to="/signin">Terms of Service</FooterLink> */}
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle>Social Media</FooterLinkTitle>
-              <FooterLink to="/signin">Instagram</FooterLink>
-              <FooterLink to="/signin">Facebok</FooterLink>
-              <FooterLink to="/signin">Youtube</FooterLink>
-              <FooterLink to="/signin">Twitter</FooterLink>
+              <FooterLink to="/" onClick={toggleHome}>
+                Instagram
+              </FooterLink>
+              <FooterLink to="/" onClick={toggleHome}>
+                Facebok
+              </FooterLink>
+              <FooterLink to="/" onClick={toggleHome}>
+                Youtube
+              </FooterLink>
+              <FooterLink to="/" onClick={toggleHome}>
+                Twitter
+              </FooterLink>
               {/* <FooterLink to="/signin">Terms of Service</FooterLink> */}
             </FooterLinkItems>
           </FooterLinksWrapper>

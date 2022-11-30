@@ -14,5 +14,5 @@ export const contactObj = {
   dark: true,
   primary: true,
   darkText: false,
-  to: "/galery",
+  to: "/gallery",
 };
