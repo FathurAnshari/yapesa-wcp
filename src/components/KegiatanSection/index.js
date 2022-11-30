@@ -52,7 +52,7 @@ const KegiatanSection = ({
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <Wrapper>
                   <Jam bright={bright}>
-                    <FaCalendarAlt color="#fde428" />
+                    <FaCalendarAlt color={jadwalText ? "010606" : "f7fbfa"} />
                   </Jam>
                   <JadwalWrap bright={bright}>
                     <Jadwal jadwalText={jadwalText}>{jadwal}</Jadwal>
