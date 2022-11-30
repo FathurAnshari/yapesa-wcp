@@ -6,7 +6,7 @@ export const homeObjOne = {
   topLine: "Profil Singkat",
   headLine: "Yayasan Endang Saefuddin Anshari",
   description:
-    "Adalah sebuah lembaga sosial yang terletak di Jl. Platina No 15, Komplek Logam, Buahbatu Bandung yang saat ini sedang dalam proses menjadi madrasah yang maju dan moderen.",
+    "YAPESA merupakan program pengembangan dakwah Lembaga Pendidikan Yapesa untuk memasyarakatkan Al Qur`an kepada generasi penerus sejak usia dini, dengan fokus kegiatan pada menghafal Al Qur`an dengan metode talaqqi. Diharapkan dengan adanya YAPESA ini akan memunculkan para penghafal Al Qur`an usia dini di wilayah dan sekitarnya.",
   buttonLabel: "Go to profile",
   imgStart: false,
   img: require("../../images/YAPESA.jpg"),
