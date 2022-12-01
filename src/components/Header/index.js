@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  FaMailBulk,
-  FaSearchLocation,
-  FaPhone,
-  FaEnvelope,
-  FaMapMarker,
-} from "react-icons/fa";
+import { FaPhone, FaEnvelope, FaMapMarker } from "react-icons/fa";
 import {
   HeaderTop,
   Container,
