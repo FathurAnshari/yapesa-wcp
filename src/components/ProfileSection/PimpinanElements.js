@@ -51,6 +51,15 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
   max-width: auto;
   padding-top: 0;
+  margin-bottom: 40px;
+  /* text-align: end; */
+`;
+
+export const TextWrapper2 = styled.div`
+  max-width: auto;
+  padding-top: 0;
+  margin-bottom: 40px;
+  text-align: end;
 `;
 
 export const TopLine = styled.p`
@@ -77,8 +86,8 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
   max-width: auto;
-  margin-bottom: 35px;
-  padding-bottom: 40px;
+  margin-bottom: 5px;
+
   font-size: 18px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? `#010606` : "#fff")};

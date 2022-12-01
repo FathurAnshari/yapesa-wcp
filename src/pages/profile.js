@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { sejarahObj, visiMisiObj } from "../components/ProfileSection/Data";
+import {
+  pimpinanObj,
+  sejarahObj,
+  visiMisiObj,
+} from "../components/ProfileSection/Data";
+import Pimpinan from "../components/ProfileSection/Pimpinan";
 import SejarahYapesa from "../components/ProfileSection/SejarahYapesa";
 import VisiMisi from "../components/ProfileSection/VisiMisi";
 
@@ -16,6 +21,7 @@ const Profile = () => {
       <ScrollToTop />
       <SejarahYapesa {...sejarahObj} />
       <VisiMisi {...visiMisiObj} />
+      <Pimpinan {...pimpinanObj} />
     </>
   );
 };

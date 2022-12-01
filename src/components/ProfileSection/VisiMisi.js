@@ -23,6 +23,7 @@ const VisiMisi = ({
   imgStart,
   topLine1,
   topLine2,
+  topLine3,
   darkText,
   description,
   ada,
@@ -30,6 +31,9 @@ const VisiMisi = ({
   misi2,
   misi3,
   misi4,
+  tujuan1,
+  tujuan2,
+  tujuan3,
 }) => {
   return (
     <>
@@ -42,8 +46,6 @@ const VisiMisi = ({
 
                 <Subtitle darkText={darkText}>{description}</Subtitle>
               </TextWrapper>
-            </Column1>
-            <Column2>
               <TextWrapper>
                 <TopLine>{topLine2}</TopLine>
                 <MisiUl>
@@ -51,6 +53,17 @@ const VisiMisi = ({
                   <Misi>{misi2}</Misi>
                   <Misi>{misi3}</Misi>
                   <Misi>{misi4}</Misi>
+                </MisiUl>
+              </TextWrapper>
+            </Column1>
+            <Column2>
+              <TextWrapper>
+                <TopLine>{topLine3}</TopLine>
+
+                <MisiUl>
+                  <Misi>{tujuan1}</Misi>
+                  <Misi>{tujuan2}</Misi>
+                  <Misi>{tujuan3}</Misi>
                 </MisiUl>
               </TextWrapper>
             </Column2>

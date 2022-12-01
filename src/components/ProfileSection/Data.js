@@ -3,7 +3,7 @@ export const sejarahObj = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: "Sejarah Yapesa",
+  topLine: "Latar Belakang",
   headLine: "Yayasan Endang Saefuddin Anshari",
   description:
     "Anak sholeh yang berbakti kepada orang tua serta rajin membaca Kalam Allah (Al-Qur’an) merupakan dambaan setiap orang tua. Karena anak yang sholeh dan sholehah adalah anak yang mampu menjadi Qurrotul ‘Ain (penyejuk pandangan bagi orang tuanya). Suasana rumah akan terasa nyaman tenang dan damai dengan sejuknya nuansa rumah Qur’ani yang dihiasai oleh suara merdu anak-anak tatkala mereka melantunkan huruf demi huruf, kata demi kata dari ayat-ayat suci Al-Qur’an.\n Namun, terkadang semua kesenangan dan keindahan anak sholeh tersebut hanya sebatas khayalan dan angan-angan semata, lantaran terkendala dengan berbagai dan banyak hal, baik perkara yang bersifat intern maupun ekstern.",
@@ -26,6 +26,7 @@ export const visiMisiObj = {
   lightTextDesc: true,
   topLine1: "Visi",
   topLine2: "Misi",
+  topLine3: "Tujuan",
   headLine: "Endang Saefuddin Anshari",
   description:
     "Membangun YAPESA Kampung Qur’an dalam rangka membentuk anak yang cinta Al Qur’an dan generasi Qur’an.",
@@ -44,23 +45,44 @@ export const visiMisiObj = {
   misi3: "Menanamkan nilai-nilai Akhlaqul karimah kepada anak",
   misi4:
     "Membimbing dan membina walisantri agar mampu mendidik putra-putrinya menghafal Qur’an secara mandiri",
+  tujuan1:
+    "Sebagai tempat untuk belajar anak anak usia dini agar dapat membaca dan menghafal Al Qur’an dengan baik dan benar sesuai dengan kaidah ilmu tajwid.",
+  tujuan2:
+    "Sebagai wadah untuk menghafal Al qur’an bagi anak- anak yang belum berkesempatan untuk belajar di Pondok Pasantren atau Madrasah maupun sekolah formal dan informal dalam keluarga.",
+  tujuan3:
+    "Dalam rangka membentuk generasi Qur’ani, yang cinta kepada Al Qur’an dan Rosulnya.",
 };
 
-export const homeObjThree = {
-  id: "gallery",
+export const pimpinanObj = {
+  id: "sejarah",
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: "Gallery",
-  headLine: "Dokumentasi Kegiatan",
+  topLine1: "Pimpinan",
+  topLine2: "Asatidz",
+  topLine3: "Tujuan",
+  headLine: "Endang Saefuddin Anshari",
   description:
-    "Tim YAPESA melakukan kegiatan sosial dan kajian dengan masyarakat sekitar.",
-  buttonLabel: "Go to gallery",
+    "Membangun YAPESA Kampung Qur’an dalam rangka membentuk anak yang cinta Al Qur’an dan generasi Qur’an.",
+  description2: "menjadi indah",
+  buttonLabel: "Go to Profile",
   imgStart: false,
-  img: require("../../images/gallery.svg").default,
-  alt: "Car",
+  img: require("../../images/svg-2.svg").default,
+  alt: "Piggybank",
   dark: false,
   primary: false,
   darkText: true,
-  to: "/gallery",
+  ada: true,
+  misi1:
+    "Mendirikan lembaga pendidikan yang fokus pada pembelajaran Al Qur’an dengan di kelola secara profesional",
+  misi2: "Mencetak hafizh Qur’an usia dini",
+  misi3: "Menanamkan nilai-nilai Akhlaqul karimah kepada anak",
+  misi4:
+    "Membimbing dan membina walisantri agar mampu mendidik putra-putrinya menghafal Qur’an secara mandiri",
+  tujuan1:
+    "Sebagai tempat untuk belajar anak anak usia dini agar dapat membaca dan menghafal Al Qur’an dengan baik dan benar sesuai dengan kaidah ilmu tajwid.",
+  tujuan2:
+    "Sebagai wadah untuk menghafal Al qur’an bagi anak- anak yang belum berkesempatan untuk belajar di Pondok Pasantren atau Madrasah maupun sekolah formal dan informal dalam keluarga.",
+  tujuan3:
+    "Dalam rangka membentuk generasi Qur’ani, yang cinta kepada Al Qur’an dan Rosulnya.",
 };
