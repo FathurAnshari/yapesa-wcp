@@ -1,23 +1,66 @@
-export const profileObjOne = {
-  titleText: "Sejarah Yapesa",
+export const sejarahObj = {
+  id: "profile-singkat",
   lightBg: true,
   lightText: false,
-  c1text:
-    "Anak sholeh yang berbakti kepada orang tua serta rajin membaca Kalam Allah (Al-Qur’an) merupakan dambaan setiap orang tua. Karena anak yang sholeh dan sholehah adalah anak yang mampu menjadi Qurrotul ‘Ain (penyejuk pandangan bagi orang tuanya). Suasana rumah akan terasa nyaman tenang dan damai dengan sejuknya nuansa rumah Qur’ani yang dihiasai oleh suara merdu anak-anak tatkala mereka melantunkan huruf demi huruf, kata demi kata dari ayat-ayat suci Al-Qur’an.",
+  lightTextDesc: false,
+  topLine: "Sejarah Yapesa",
+  headLine: "Yayasan Endang Saefuddin Anshari",
+  description:
+    "Anak sholeh yang berbakti kepada orang tua serta rajin membaca Kalam Allah (Al-Qur’an) merupakan dambaan setiap orang tua. Karena anak yang sholeh dan sholehah adalah anak yang mampu menjadi Qurrotul ‘Ain (penyejuk pandangan bagi orang tuanya). Suasana rumah akan terasa nyaman tenang dan damai dengan sejuknya nuansa rumah Qur’ani yang dihiasai oleh suara merdu anak-anak tatkala mereka melantunkan huruf demi huruf, kata demi kata dari ayat-ayat suci Al-Qur’an.\n Namun, terkadang semua kesenangan dan keindahan anak sholeh tersebut hanya sebatas khayalan dan angan-angan semata, lantaran terkendala dengan berbagai dan banyak hal, baik perkara yang bersifat intern maupun ekstern.",
+  description2:
+    "Oleh karena itu, menjadi salah satu solusi bagi kita untuk mewujudkan cita-cita dan harapan memiliki anak yang sholeh yaitu dengan mencarikan lingkungan yang baik serta guru pembimbing (pembina) yang bertanggung jawab untuk anak-anak kita. Alhamdulillah, dengan hadirnya “YAPESA Kampung Qur’an” di tengah-tengah masyarakat diharapkan bisa menjadi solusi bagi orang tua yang menginginkan anak-anak yang Qur’ani dan penghafal Al Qur’an.",
+  buttonLabel: "Go to profile",
+  imgStart: false,
+  img: require("../../images/yapesa.png"),
+  alt: "Car",
+  dark: false,
+  primary: false,
+  darkText: true,
+  ada: false,
+};
+
+export const visiMisiObj = {
+  id: "sejarah",
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine1: "Visi",
+  topLine2: "Misi",
+  headLine: "Endang Saefuddin Anshari",
+  description:
+    "Membangun YAPESA Kampung Qur’an dalam rangka membentuk anak yang cinta Al Qur’an dan generasi Qur’an.",
+  description2: "menjadi indah",
+  buttonLabel: "Go to Profile",
+  imgStart: false,
+  img: require("../../images/svg-2.svg").default,
+  alt: "Piggybank",
+  dark: true,
+  primary: true,
+  darkText: false,
   ada: true,
+  misi1:
+    "Mendirikan lembaga pendidikan yang fokus pada pembelajaran Al Qur’an dengan di kelola secara profesional",
+  misi2: "Mencetak hafizh Qur’an usia dini",
+  misi3: "Menanamkan nilai-nilai Akhlaqul karimah kepada anak",
+  misi4:
+    "Membimbing dan membina walisantri agar mampu mendidik putra-putrinya menghafal Qur’an secara mandiri",
 };
-export const profileObjTwo = {
-  titleText: "Visi & Misi",
-  lightBg: false,
-  lightText: true,
-};
-export const profileObjThree = {
-  titleText: "Tujuan",
+
+export const homeObjThree = {
+  id: "gallery",
   lightBg: true,
   lightText: false,
-};
-export const profileObjFour = {
-  titleText: "Pimpinan, Pengurus dan Asatidz",
-  lightBg: false,
-  lightText: true,
+  lightTextDesc: false,
+  topLine: "Gallery",
+  headLine: "Dokumentasi Kegiatan",
+  description:
+    "Tim YAPESA melakukan kegiatan sosial dan kajian dengan masyarakat sekitar.",
+  buttonLabel: "Go to gallery",
+  imgStart: false,
+  img: require("../../images/gallery.svg").default,
+  alt: "Car",
+  dark: false,
+  primary: false,
+  darkText: true,
+  to: "/gallery",
 };

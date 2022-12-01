@@ -66,15 +66,63 @@ export const TitleText = styled.h1`
 
 export const ProfileContent = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Column1 = styled.div`
   display: flex;
+
+  @media screen and (max-width: 480px) {
+    padding: 15px;
+    margin-top: -165px;
+  }
+
   /* height: fit-content;
   width: fit-content; */
 `;
+export const TextWrapper = styled.div`
+  max-width: 1050px;
+  width: auto;
+  height: auto;
+  padding-top: 0;
+`;
+export const TopLine = styled.p`
+  color: #01bf71;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+`;
+export const Subtitle = styled.p`
+  max-width: 1050px;
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 24px;
+  color: ${({ darkText }) => (darkText ? `#010606` : "#fff")};
+`;
 
-export const Column2 = styled.div``;
+export const Column2 = styled.div`
+  display: flex;
+
+  @media screen and (max-width: 480px) {
+    padding: 15px;
+    margin-top: -165px;
+  }
+`;
+
+export const ImgWrap = styled.div`
+  max-width: 555px;
+  height: 100%;
+`;
+
+export const Img = styled.img`
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding-right: 0;
+`;
 
 export const C1Text = styled.h1`
   font-size: 24px;

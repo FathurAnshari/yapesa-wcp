@@ -1,15 +1,9 @@
 import React, { useState } from "react";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import ProfileSection from "../components/ProfileSection";
-import {
-  profileObjFour,
-  profileObjOne,
-  profileObjTwo,
-  profileObjThree,
-} from "../components/ProfileSection/Data";
+import { sejarahObj, visiMisiObj } from "../components/ProfileSection/Data";
+import SejarahYapesa from "../components/ProfileSection/SejarahYapesa";
+import VisiMisi from "../components/ProfileSection/VisiMisi";
+
 import ScrollToTop from "../components/ScrollToTop";
-import Sidebar from "../components/Sidebar";
 
 const Profile = () => {
   const [isOpen, setIsopen] = useState(false);
@@ -20,10 +14,8 @@ const Profile = () => {
   return (
     <>
       <ScrollToTop />
-      <ProfileSection {...profileObjOne} />
-      <ProfileSection {...profileObjTwo} />
-      <ProfileSection {...profileObjThree} />
-      <ProfileSection {...profileObjFour} />
+      <SejarahYapesa {...sejarahObj} />
+      <VisiMisi {...visiMisiObj} />
     </>
   );
 };
