@@ -20,7 +20,7 @@ export const HeaderTop = styled.div`
 
 export const Container = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 80px;
   z-index: 1;
   width: 100%;
@@ -31,7 +31,6 @@ export const Container = styled.div`
 export const HeaderMenu = styled.ul`
   display: flex;
   align-items: center;
-  justify-items: space-around;
   list-style: none;
   text-align: center;
   margin-right: -22px;
@@ -62,12 +61,10 @@ export const BCA = styled.img`
   font-size: 24px;
   width: 50px;
   height: 20px;
-  margin-left: 35px;
 `;
 
 export const Text = styled.p`
   max-width: 440px;
-  /* margin-bottom: 35px; */
   font-size: 13px;
   line-height: 24px;
   color: #fff;
