@@ -3,10 +3,8 @@ import {
   SidebarContainer,
   Icon,
   CloseIcon,
-  SideBtnWrap,
   SidebarWrapper,
   SidebarMenu,
-  SidebarRoute,
   SidebarLink,
 } from "./SidebarElements";
 

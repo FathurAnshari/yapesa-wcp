@@ -7,15 +7,9 @@ import {
   TextWrapper,
   TextWrapper2,
   TopLine,
-  Heading,
   Subtitle,
-  BtnWrap,
-  Img,
   Column1,
   Column2,
-  ImgWrap,
-  Misi,
-  MisiUl,
 } from "./PimpinanElements";
 
 const Pimpinan = ({
@@ -24,17 +18,8 @@ const Pimpinan = ({
   imgStart,
   topLine1,
   topLine2,
-  topLine3,
+
   darkText,
-  description,
-  ada,
-  misi1,
-  misi2,
-  misi3,
-  misi4,
-  tujuan1,
-  tujuan2,
-  tujuan3,
 }) => {
   return (
     <>

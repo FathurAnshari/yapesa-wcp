@@ -6,13 +6,9 @@ import {
   InfoRow,
   TextWrapper,
   TopLine,
-  Heading,
   Subtitle,
-  BtnWrap,
-  Img,
   Column1,
   Column2,
-  ImgWrap,
   Misi,
   MisiUl,
 } from "./VisiMisiElements";
@@ -26,7 +22,7 @@ const VisiMisi = ({
   topLine3,
   darkText,
   description,
-  ada,
+
   misi1,
   misi2,
   misi3,

@@ -6,9 +6,7 @@ import {
   InfoRow,
   TextWrapper,
   TopLine,
-  Heading,
   Subtitle,
-  BtnWrap,
   Img,
   Column1,
   Column2,
@@ -20,19 +18,13 @@ const SejarahYapesa = ({
   id,
   imgStart,
   topLine,
-  lightText,
-  headLine,
   darkText,
   description,
-  buttonLabel,
   img,
   alt,
-  primary,
-  dark,
-  dark2,
-  to,
   ada,
   description2,
+  description3,
 }) => {
   return (
     <>
@@ -45,6 +37,7 @@ const SejarahYapesa = ({
                 {/* <Heading lightText={lightText}>{headLine}</Heading> */}
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <Subtitle darkText={darkText}>{description2}</Subtitle>
+                <Subtitle darkText={darkText}>{description3}</Subtitle>
               </TextWrapper>
             </Column1>
             {ada ? (

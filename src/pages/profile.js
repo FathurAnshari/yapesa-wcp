@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import MapEmbeded from "../components/MapEmbeded";
 import {
   pimpinanObj,
@@ -12,11 +12,6 @@ import VisiMisi from "../components/ProfileSection/VisiMisi";
 import ScrollToTop from "../components/ScrollToTop";
 
 const Profile = () => {
-  const [isOpen, setIsopen] = useState(false);
-
-  const toggle = () => {
-    setIsopen(!isOpen);
-  };
   return (
     <>
       <ScrollToTop />

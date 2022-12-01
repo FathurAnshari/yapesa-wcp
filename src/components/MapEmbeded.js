@@ -20,6 +20,7 @@ const MapEmbeded = () => {
         Jl. Platina NO. 15 Logam, Cijaura, Buahbatu Bandung
       </h4>
       <iframe
+        title="map"
         style={{
           width: "100%",
           height: "650px",
