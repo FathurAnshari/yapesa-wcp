@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import MapEmbeded from "../components/MapEmbeded";
 import {
   pimpinanObj,
   sejarahObj,
@@ -22,6 +23,7 @@ const Profile = () => {
       <SejarahYapesa {...sejarahObj} />
       <VisiMisi {...visiMisiObj} />
       <Pimpinan {...pimpinanObj} />
+      <MapEmbeded />
     </>
   );
 };
