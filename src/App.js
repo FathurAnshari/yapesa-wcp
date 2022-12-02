@@ -4,7 +4,6 @@ import Sidebar from "../src/components/Sidebar/index";
 import Navbar from "../src/components/Navbar/index";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages";
-import SigninPage from "./pages/signin";
 import Profile from "./pages/profile";
 import Kegiatan from "./pages/kegiatan";
 import Gallery from "./pages/galery";
