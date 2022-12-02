@@ -10,10 +10,8 @@ import {
   Heading,
   Subtitle,
   BtnWrap,
-  Img,
   Column1,
   Column2,
-  ImgWrap,
 } from "./InfoElements";
 
 const YoutubeEmbedSection = ({

@@ -9,7 +9,6 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  BtnWrap,
   Img,
   Column1,
   Column2,
@@ -30,15 +29,10 @@ const KegiatanSection = ({
   darkText,
   description,
   bright,
-  buttonLabel,
   img,
   alt,
   jadwal,
   jadwalText,
-  primary,
-  dark,
-  dark2,
-  to,
 }) => {
   return (
     <>

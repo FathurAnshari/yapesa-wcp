@@ -92,7 +92,6 @@ const Footer = () => {
               <FooterLink to="/" onClick={toggleHome}>
                 Twitter
               </FooterLink>
-              {/* <FooterLink to="/signin">Terms of Service</FooterLink> */}
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>

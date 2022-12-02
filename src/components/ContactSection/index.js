@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "../ButtonElements";
-import BasicForm from "../Form/BasicForm";
 import {
   InfoContainer,
   InfoWrapper,
@@ -10,10 +9,8 @@ import {
   Heading,
   Subtitle,
   BtnWrap,
-  Img,
   Column1,
   Column2,
-  ImgWrap,
 } from "./ContactElements";
 import ContactForm from "./ContactForm";
 
@@ -27,8 +24,6 @@ const ContactSection = ({
   darkText,
   description,
   buttonLabel,
-  img,
-  alt,
   primary,
   dark,
   dark2,

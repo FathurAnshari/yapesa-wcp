@@ -22,7 +22,6 @@ const VisiMisi = ({
   topLine3,
   darkText,
   description,
-
   misi1,
   misi2,
   misi3,
