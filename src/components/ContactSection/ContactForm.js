@@ -15,6 +15,27 @@ const Contact = () => {
   const email = useRef();
   const message = useRef();
 
+  const sendEmail = (e) => {
+    // e.preventDefault();
+    setIsLoading(true);
+
+    emailjs
+      .sendForm(
+        "service_5bx8gz8",
+        "template_wsre8vs",
+        form.current,
+        "eLkI8YbuOGUS3oCu7"
+      )
+      .then(() => {
+        setIsLoading(false);
+        setShowNotif(true);
+        formik.setSubmitting(false);
+        formik.resetForm();
+        setTimeout(() => {
+          setShowNotif(false);
+        }, 2000);
+      });
+  };
   const formik = useFormik({
     // initial values
     initialValues: {
@@ -28,38 +49,13 @@ const Contact = () => {
       user_email: Yup.string().required().email("Invalid email format"),
       message: Yup.string().required(),
     }),
+    // handle submission
+    onSubmit: sendEmail,
   });
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-
-    emailjs
-      .sendForm(
-        "service_5bx8gz8",
-        "template_wsre8vs",
-        form.current,
-        "eLkI8YbuOGUS3oCu7"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log("message sent");
-          setIsLoading(false);
-          setShowNotif(true);
-          form.current.reset();
-          setTimeout(() => setShowNotif(false), 3000);
-        }
-        // (error) => {
-        //   setIsLoading(false);
-        //   console.log(error.text);
-        // }
-      );
-  };
 
   return (
     <StyledContactForm>
-      <form ref={form} onSubmit={sendEmail}>
+      <form ref={form} onSubmit={formik.handleSubmit}>
         <label>Name</label>
         <input
           type="text"
@@ -100,7 +96,11 @@ const Contact = () => {
           <div className="error">Message tidak boleh kosong</div>
         )}
 
-        {isLoading ? <LoadingSpinner /> : <input type="submit" value="Send" />}
+        {isLoading ? (
+          <LoadingSpinner />
+        ) : (
+          <input type="submit" value="Send" disabled={formik.isSubmitting} />
+        )}
         {showNotif ? (
           <p style={{ color: "#fff" }}>Your email have been sent!</p>
         ) : null}
