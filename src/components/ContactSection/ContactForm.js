@@ -79,7 +79,7 @@ const Contact = () => {
           type="email"
           name="user_email"
           ref={email}
-          placeholder="anshariF17@gmail.com"
+          placeholder="email@gmail.com"
           autoComplete="off"
           required
           {...formik.getFieldProps("user_email")}
