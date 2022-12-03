@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Footer from "../components/Footer";
+import React from "react";
+
 import KegiatanSection from "../components/KegiatanSection";
 import {
   kegiatanObjFour,
@@ -8,16 +8,10 @@ import {
   kegiatanObjTwo,
   kegiatanObjFive,
 } from "../components/KegiatanSection/Data";
-import Navbar from "../components/Navbar";
+
 import ScrollToTop from "../components/ScrollToTop";
-import Sidebar from "../components/Sidebar";
 
 const Kegiatan = () => {
-  const [isOpen, setIsopen] = useState(false);
-
-  const toggle = () => {
-    setIsopen(!isOpen);
-  };
   return (
     <>
       <ScrollToTop />

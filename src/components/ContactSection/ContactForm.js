@@ -1,4 +1,6 @@
 import React, { useState, useRef } from "react";
+import { useFormik } from "formik";
+import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import LoadingSpinner from "../UI/LoadingSpinner";
@@ -6,13 +8,30 @@ import LoadingSpinner from "../UI/LoadingSpinner";
 // npm i @emailjs/browser
 
 const Contact = () => {
-  const [isLoading, setIsLoading] = useState(false);
-
   const form = useRef();
+  const [isLoading, setIsLoading] = useState(false);
+  const [showNotif, setShowNotif] = useState(false);
+  const name = useRef();
+  const email = useRef();
+  const message = useRef();
+
+  const formik = useFormik({
+    // initial values
+    initialValues: {
+      user_name: "",
+      user_email: "",
+      message: "",
+    },
+    // validation schema
+    validationSchema: Yup.object({
+      user_name: Yup.string().required(),
+      user_email: Yup.string().required().email("Invalid email format"),
+      message: Yup.string().required(),
+    }),
+  });
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     setIsLoading(true);
 
     emailjs
@@ -27,12 +46,14 @@ const Contact = () => {
           console.log(result.text);
           console.log("message sent");
           setIsLoading(false);
-          e.target.reset();
-        },
-        (error) => {
-          setIsLoading(false);
-          console.log(error.text);
+          setShowNotif(true);
+          form.current.reset();
+          setTimeout(() => setShowNotif(false), 3000);
         }
+        // (error) => {
+        //   setIsLoading(false);
+        //   console.log(error.text);
+        // }
       );
   };
 
@@ -40,15 +61,49 @@ const Contact = () => {
     <StyledContactForm>
       <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
-        <input type="text" name="user_name" />
+        <input
+          type="text"
+          name="user_name"
+          ref={name}
+          placeholder="Fathur Muhammad Fadlan Anshari"
+          autoComplete="off"
+          required
+          {...formik.getFieldProps("user_name")}
+        />
+        {formik.touched.user_name && formik.errors.user_name && (
+          <div className="error">Nama tidak boleh kosong</div>
+        )}
 
         <label>Email</label>
-        <input type="email" name="user_email" />
+        <input
+          type="email"
+          name="user_email"
+          ref={email}
+          placeholder="anshariF17@gmail.com"
+          autoComplete="off"
+          required
+          {...formik.getFieldProps("user_email")}
+        />
+        {formik.touched.user_email && formik.errors.user_email && (
+          <div className="error">Email tidak boleh kosong</div>
+        )}
 
         <label>Message</label>
-        <textarea name="message" />
+        <textarea
+          name="message"
+          ref={message}
+          placeholder="Kirimkan saran & kritik untuk kemajuan YAPESA"
+          required
+          {...formik.getFieldProps("message")}
+        />
+        {formik.touched.message && formik.errors.message && (
+          <div className="error">Message tidak boleh kosong</div>
+        )}
 
         {isLoading ? <LoadingSpinner /> : <input type="submit" value="Send" />}
+        {showNotif ? (
+          <p style={{ color: "#fff" }}>Your email have been sent!</p>
+        ) : null}
       </form>
     </StyledContactForm>
   );
