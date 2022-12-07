@@ -13,6 +13,7 @@ import {
   Column1,
   Column2,
   ImgWrap,
+  Subtitle2,
 } from "./InfoElements";
 
 const InfoSection = ({
@@ -31,6 +32,8 @@ const InfoSection = ({
   dark,
   dark2,
   to,
+  ada,
+  description2,
 }) => {
   return (
     <>
@@ -42,6 +45,9 @@ const InfoSection = ({
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headLine}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
+                {ada ? (
+                  <Subtitle2 darkText={darkText}>{description2}</Subtitle2>
+                ) : null}
                 <BtnWrap>
                   <Button
                     to={to}

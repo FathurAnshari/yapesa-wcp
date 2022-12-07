@@ -32,6 +32,9 @@ export const InfoRow = styled.div`
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `"col1" "col2"` : `"col1 col1"  "col2 col2"`};
   }
+  @media screen and (max-width: 480px) {
+    margin-top: -60px;
+  }
 `;
 
 export const Column1 = styled.div`
@@ -81,19 +84,42 @@ export const Subtitle = styled.p`
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? `#010606` : "#fff")};
 `;
+export const Subtitle2 = styled.p`
+  max-width: 440px;
+  margin-top: -20px;
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 24px;
+  color: ${({ darkText }) => (darkText ? `#010606` : "#fff")};
+`;
 
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;
+
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+  }
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 555px;
+  max-width: 400px;
   height: 100%;
+  float: right;
+
+  @media screen and (max-width: 480px) {
+    text-align: center;
+  }
 `;
 
 export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+  border-radius: 4rem;
+
+  @media screen and (max-width: 480px) {
+    width: 70%;
+    margin-top: -50px;
+  }
 `;
