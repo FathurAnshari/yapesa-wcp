@@ -1,4 +1,4 @@
-export const homeObjOne = {
+export const profileObj = {
   id: "profile-singkat",
   lightBg: false,
   lightText: true,
@@ -17,7 +17,7 @@ export const homeObjOne = {
   to: "/profile",
 };
 
-export const homeObjTwo = {
+export const sejarahSingkatObj = {
   id: "sejarah",
   lightBg: true,
   lightText: false,

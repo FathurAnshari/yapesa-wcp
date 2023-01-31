@@ -1,4 +1,4 @@
-export const sejarahObj = {
+export const latarBelakangObj = {
   id: "profile-singkat",
   lightBg: true,
   lightText: false,

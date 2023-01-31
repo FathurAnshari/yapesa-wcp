@@ -1,4 +1,4 @@
-export const homeObjYT = {
+export const YTEmbedObj = {
   id: "gallery",
   lightBg: true,
   lightText: false,

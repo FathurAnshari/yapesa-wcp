@@ -2,11 +2,11 @@ import React from "react";
 
 import KegiatanSection from "../components/KegiatanSection";
 import {
-  kegiatanObjFour,
-  kegiatanObjOne,
-  kegiatanObjThree,
-  kegiatanObjTwo,
-  kegiatanObjFive,
+  tahfidzOnlineObj,
+  kajianObj,
+  tahsinObj,
+  jumatBerkahObj,
+  tahfidzObj,
 } from "../components/KegiatanSection/Data";
 
 import ScrollToTop from "../components/ScrollToTop";
@@ -15,11 +15,11 @@ const Kegiatan = () => {
   return (
     <>
       <ScrollToTop />
-      <KegiatanSection {...kegiatanObjOne} />
-      <KegiatanSection {...kegiatanObjTwo} />
-      <KegiatanSection {...kegiatanObjThree} />
-      <KegiatanSection {...kegiatanObjFour} />
-      <KegiatanSection {...kegiatanObjFive} />
+      <KegiatanSection {...kajianObj} />
+      <KegiatanSection {...jumatBerkahObj} />
+      <KegiatanSection {...tahsinObj} />
+      <KegiatanSection {...tahfidzOnlineObj} />
+      <KegiatanSection {...tahfidzObj} />
     </>
   );
 };

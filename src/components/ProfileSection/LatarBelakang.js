@@ -13,7 +13,7 @@ import {
   ImgWrap,
 } from "./SejarahElements";
 
-const SejarahYapesa = ({
+const LatarBelakang = ({
   lightBg,
   id,
   imgStart,
@@ -56,4 +56,4 @@ const SejarahYapesa = ({
   );
 };
 
-export default SejarahYapesa;
+export default LatarBelakang;

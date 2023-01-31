@@ -1,4 +1,4 @@
-export const kegiatanObjOne = {
+export const kajianObj = {
   id: "kajian-islami",
   lightBg: false,
   lightText: true,
@@ -19,7 +19,7 @@ export const kegiatanObjOne = {
   bright: true,
   to: "/profile",
 };
-export const kegiatanObjTwo = {
+export const jumatBerkahObj = {
   id: "jumat-berkah",
   lightBg: true,
   lightText: false,
@@ -40,7 +40,7 @@ export const kegiatanObjTwo = {
   bright: false,
   to: "/profile",
 };
-export const kegiatanObjThree = {
+export const tahsinObj = {
   id: "tashin",
   lightBg: false,
   lightText: true,
@@ -61,7 +61,7 @@ export const kegiatanObjThree = {
   bright: true,
   to: "/profile",
 };
-export const kegiatanObjFour = {
+export const tahfidzOnlineObj = {
   id: "tahfidz-online",
   lightBg: true,
   lightText: false,
@@ -83,7 +83,7 @@ export const kegiatanObjFour = {
   to: "/profile",
 };
 
-export const kegiatanObjFive = {
+export const tahfidzObj = {
   id: "tahfidz",
   lightBg: false,
   lightText: true,
